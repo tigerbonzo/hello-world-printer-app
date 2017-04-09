@@ -16,7 +16,6 @@ docker_build:
 USERNAME=tigerbonzo
 TAG=$(USERNAME)/hello-world-printer
 docker_push:
-  #zmiana dla zmiany
 	@docker login --username $(USERNAME) --password $(PASSWORD) ;\
 	docker tag hello-world-printer $(TAG); \
 	docker push $(TAG); \
